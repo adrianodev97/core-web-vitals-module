@@ -19,13 +19,15 @@ export default function Home() {
                 Solução <br />
                 DynaPredict
               </h1>
-              <Image
-                className="logo"
-                width={190}
-                height={37}
-                src={DynaPredict}
-                alt="Logo DynaPredict"
-              />
+              <div className="logo-block">
+                <Image
+                  className="logo"
+                  width={190}
+                  height={37}
+                  src={DynaPredict}
+                  alt="Logo DynaPredict"
+                />
+              </div>
             </div>
             <div className="image-block">
               <Image src={Desktop} width={912} height={743} alt="Desktop" />
