@@ -3,11 +3,11 @@
 import { useState } from 'react'
 import { Button } from '../components/Button'
 import { util } from '../util/util'
-import desktop from '../assets/images/desktop-and-mobile.png'
-import dynaPredict from '../assets/images/logo-dynapredict.png'
-import sensorAs from '../assets/images/sensor-as.png'
-import sensorHf from '../assets/images/sensor-hf.png'
-import sensorTca from '../assets/images/sensor-tca.png'
+import Desktop from '../assets/images/desktop-and-mobile.png'
+import DynaPredict from '../assets/images/logo-dynapredict.png'
+import SensorAs from '../assets/images/sensor-as.png'
+import SensorHf from '../assets/images/sensor-hf.png'
+import SensorTca from '../assets/images/sensor-tca.png'
 import Image from 'next/image'
 
 export default function Home() {
@@ -73,12 +73,14 @@ export default function Home() {
               </h1>
               <Image
                 className="logo"
-                src={dynaPredict}
+                width={190}
+                height={37}
+                src={DynaPredict}
                 alt="Logo DynaPredict"
               />
             </div>
             <div className="image-block">
-              <Image src={desktop} alt="Desktop" />
+              <Image src={Desktop} width={912} height={743} alt="Desktop" />
             </div>
           </div>
         </section>
@@ -104,15 +106,15 @@ export default function Home() {
             </Button>
             <div className="sensors-block">
               <div className="sensors-item">
-                <Image src={sensorTca} alt="TcA" />
+                <Image src={SensorTca} width={500} height={500} alt="TcA" />
                 <h3>TcA+</h3>
               </div>
               <div className="sensors-item">
-                <Image src={sensorAs} alt="AS" />
+                <Image src={SensorAs} width={500} height={500} alt="AS" />
                 <h3>AS</h3>
               </div>
               <div className="sensors-item">
-                <Image src={sensorHf} alt="HF" />
+                <Image src={SensorHf} width={500} height={500} alt="HF" />
                 <h3>HF</h3>
               </div>
             </div>
