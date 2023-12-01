@@ -103,14 +103,23 @@
       flex-wrap: wrap;
   
       .sensors-item {
+        width: 100%;
+        max-width: 275px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
   
-        img {
-          max-width: 275px;
-          margin: 2rem 0 1rem;
+        .sensor-block {
+          width: 100%;
+          aspect-ratio: 1 / 1;
+
+          img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            margin: 2rem 0 1rem;
+          }
         }
   
         h3 {
