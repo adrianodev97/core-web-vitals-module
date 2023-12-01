@@ -1,4 +1,11 @@
-export const Button = (props: any) => {
+import React from 'react'
+
+export const Button = (props: {
+  link?: string
+  classStyle: string
+  children: React.ReactNode
+  onclick?: () => void
+}) => {
   const render = props.link ? (
     <a
       href={props.link}

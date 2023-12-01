@@ -1,5 +1,5 @@
 // import { Link } from "react-scroll"
-import logo from '../../assets/images/logo-dynamox.png'
+// import logo from '../../assets/images/logo-dynamox.png'
 import { MenuToggle } from '../MenuToggle'
 
 const Header = () => {
