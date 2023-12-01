@@ -1,28 +1,34 @@
-import { useState } from "react"
+import { useState } from 'react'
 // import { Link } from "react-scroll"
 
 export const MenuToggle = () => {
-
-  const [toggle, setToggle] = useState("")
+  const [toggle, setToggle] = useState('')
 
   return (
     <>
-      <div className={["menuBtn", toggle].join(" ")} onClick={() => { toggle ? setToggle("") : setToggle("active") }}>
+      <div
+        className={['menuBtn', toggle].join(' ')}
+        onClick={() => {
+          toggle ? setToggle('') : setToggle('active')
+        }}
+      >
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      <section className={["menu-mobile", toggle].join(" ")}>
+      <section className={['menu-mobile', toggle].join(' ')}>
         <nav className="nav-mobile">
           <ul className="nav_list">
             <li className="nav_item">
-              <a 
-                href="https://dynamox.net/dynapredict/" 
-                target="_blank" 
+              <a
+                href="https://dynamox.net/dynapredict/"
+                target="_blank"
                 rel="noreferrer"
-                className="nav_link">
-              DynaPredict</a>
+                className="nav_link"
+              >
+                DynaPredict
+              </a>
             </li>
             {/* <li className="nav_item">
               <Link

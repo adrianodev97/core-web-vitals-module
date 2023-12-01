@@ -1,19 +1,27 @@
 // import { Link } from "react-scroll"
-import logo from "../../assets/images/logo-dynamox.png"
-import {MenuToggle}  from "../MenuToggle"
+import logo from '../../assets/images/logo-dynamox.png'
+import { MenuToggle } from '../MenuToggle'
 
 const Header = () => {
-    return (
-        <>
-            <header className="header">
-                <div className="header-content container">
-                    <a href=" https://dynamox.net/" target="_blank" rel="noreferrer">
-                        {/* {logo && <img src={logo} alt="logo" className="logo" />} */}
-                    </a>
-                    <nav className="header-nav">
-                        <ul className="nav-list">
-                            <li><a href="https://dynamox.net/dynapredict/" target="_blank" rel="noreferrer">DynaPredict</a></li>
-                            {/* <li>
+  return (
+    <>
+      <header className="header">
+        <div className="header-content container">
+          <a href=" https://dynamox.net/" target="_blank" rel="noreferrer">
+            {/* {logo && <img src={logo} alt="logo" className="logo" />} */}
+          </a>
+          <nav className="header-nav">
+            <ul className="nav-list">
+              <li>
+                <a
+                  href="https://dynamox.net/dynapredict/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  DynaPredict
+                </a>
+              </li>
+              {/* <li>
                                 <Link
                                     activeClass="active"
                                     to="sensors"
@@ -35,14 +43,14 @@ const Header = () => {
                                     Contato
                                 </Link>
                             </li> */}
-                        </ul>
-                    </nav>
-                    <MenuToggle/>
-                </div>
-            </header>
-            <div className="space-header"></div>
-        </>
-    )
+            </ul>
+          </nav>
+          <MenuToggle />
+        </div>
+      </header>
+      <div className="space-header"></div>
+    </>
+  )
 }
 
 export default Header
