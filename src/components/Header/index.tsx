@@ -1,5 +1,5 @@
-// import { Link } from "react-scroll"
-// import logo from '../../assets/images/logo-dynamox.png'
+import Logo from '../../assets/images/logo-dynamox.png'
+import Image from 'next/image'
 import { MenuToggle } from '../MenuToggle'
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
       <header className="header">
         <div className="header-content container">
           <a href=" https://dynamox.net/" target="_blank" rel="noreferrer">
-            {/* {logo && <img src={logo} alt="logo" className="logo" />} */}
+            <Image src={Logo} alt="logo" className="logo" />
           </a>
           <nav className="header-nav">
             <ul className="nav-list">
@@ -21,28 +21,12 @@ const Header = () => {
                   DynaPredict
                 </a>
               </li>
-              {/* <li>
-                                <Link
-                                    activeClass="active"
-                                    to="sensors"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-100}
-                                    duration={500}>
-                                    Sensores
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    activeClass="active"
-                                    to="contact"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={0}
-                                    duration={500}>
-                                    Contato
-                                </Link>
-                            </li> */}
+              <li>
+                <a href="#sensors">Sensores</a>
+              </li>
+              <li>
+                <a href="#contact">Contato</a>
+              </li>
             </ul>
           </nav>
           <MenuToggle />

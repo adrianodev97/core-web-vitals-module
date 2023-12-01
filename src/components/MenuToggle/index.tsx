@@ -1,5 +1,4 @@
 import { useState } from 'react'
-// import { Link } from "react-scroll"
 
 export const MenuToggle = () => {
   const [toggle, setToggle] = useState('')
@@ -30,32 +29,28 @@ export const MenuToggle = () => {
                 DynaPredict
               </a>
             </li>
-            {/* <li className="nav_item">
-              <Link
+            <li className="nav_item">
+              <a
                 className="nav_link"
-                onClick={() => {setToggle("")}}
-                activeClass="active"
-                to="sensors"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}>
+                onClick={() => {
+                  setToggle('')
+                }}
+                href="#sensors"
+              >
                 Sensores
-              </Link>
+              </a>
             </li>
             <li className="nav_item">
-              <Link
+              <a
                 className="nav_link"
-                onClick={() => {setToggle("")}}
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}>
+                onClick={() => {
+                  setToggle('')
+                }}
+                href="#contact"
+              >
                 Contato
-              </Link>
-            </li> */}
+              </a>
+            </li>
           </ul>
         </nav>
       </section>
